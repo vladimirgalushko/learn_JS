@@ -1,14 +1,20 @@
 "use strict"
 
-// alert("Hello!");
+const numberOfFilms = +prompt ('Сколько фильмов вы уже просмотрели?', ''); //How many films have you watched so far?
+const personalMoviesDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const result = confirm("Are you sure?");
-// console.log(result);
+const a = prompt ('Один из последних просмотренных фильмов?','');
+const b = prompt ('На сколько оцените его','');
+const c = prompt ('Один из последних просмотренных фильмов?','');
+const d = prompt ('На сколько оцените его','');
 
-// const answer = prompt ("How old are you?","20");
-// console.log (answer, typeof(answer));
+personalMoviesDB.movies[a] = b;
+personalMoviesDB.movies[c] = d;
 
-// const user = "Саша";
-// alert (`Привет ${user}`);
-
-console.log (2*4 == 8);
+console.log (personalMoviesDB);
